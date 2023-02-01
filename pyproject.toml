@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "chitose"
+version = "0.1.0"
+description = "The backend API for Akari"
+authors = ["No767 <73260931+No767@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+Django = "^4.1.5"
+djangorestframework = "^3.14.0"
+Markdown = "^3.4.1"
+django-filter = "^22.1"
+pyyaml = "^6.0"
+uritemplate = "^4.1.1"
+pygments = "^2.14.0"
+django-guardian = "^2.4.0"
+python-dotenv = "^0.21.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
