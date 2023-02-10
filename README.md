@@ -1,4 +1,4 @@
-<img align=right alt="chitose" src="./assets/chitose-128-rounded.png">
+<img align=right alt="chitose" src="./assets/chitose-200-rounded.png" width=128 height=128>
 
 # Chitose
 
