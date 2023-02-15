@@ -1,9 +1,11 @@
 from api.router import api_router
-from fastapi import FastAPI
-from prisma import Prisma # type: ignore
 from config.settings import settings
+from fastapi import FastAPI
+from prisma import Prisma  # type: ignore
 
-app = FastAPI(title=settings.NAME, description=settings.DESCRIPTION, version=settings.VERSION)
+app = FastAPI(
+    title=settings.NAME, description=settings.DESCRIPTION, version=settings.VERSION
+)
 db = Prisma(auto_register=True)
 
 app.include_router(api_router)
