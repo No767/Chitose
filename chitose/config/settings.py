@@ -2,12 +2,9 @@ from pydantic import AnyHttpUrl, BaseSettings
 
 
 class Settings(BaseSettings):
-    TITLE: str
+    NAME: str
     DESCRIPTION: str
     VERSION: str
-    PROJECT_NAME: str
-    SERVER_NAME: str
-    SERVER_HOST: AnyHttpUrl
 
 
-settings = Settings()
+settings = Settings(NAME="Chitose", DESCRIPTION="The backend API for Akari", VERSION="v0.1.0") 
