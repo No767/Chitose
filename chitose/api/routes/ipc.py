@@ -13,6 +13,8 @@ ipc = Client(secret_key="")
 
 @router.get("/user/{user_id}")
 async def get_user(user_id: int) -> Any:
+    """Gets the information about the currently logged in user
+    """
     ipcRes = await ipc.request("get_user_data", user_id=user_id)
     return ipcRes.response
 
