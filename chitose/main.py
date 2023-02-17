@@ -1,7 +1,8 @@
-from api.router import api_router
-from config.settings import settings
 from fastapi import FastAPI
 from prisma import Prisma
+
+from .api import api_router
+from .config.settings import settings
 
 app = FastAPI(
     title=settings.NAME, description=settings.DESCRIPTION, version=settings.VERSION
