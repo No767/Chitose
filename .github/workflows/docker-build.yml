@@ -24,14 +24,10 @@ jobs:
           images: |
             ghcr.io/no767/chitose
           tags: |
-            type=semver,pattern={{version}},suffix=-bullseye
-            type=semver,pattern={{major}}.{{minor}},suffix=-bullseye
-            type=semver,pattern={{major}},suffix=-bullseye
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=edge,branch=dev
-            type=edge,branch=dev,suffix=-bullseye
+            type=edge,branch=dev/v0
 
       - name: Setup Docker Buildx
         id: buildx
@@ -82,14 +78,10 @@ jobs:
           images: |
             no767/chitose
           tags: |
-            type=semver,pattern={{version}},suffix=-bullseye
-            type=semver,pattern={{major}}.{{minor}},suffix=-bullseye
-            type=semver,pattern={{major}},suffix=-bullseye
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=edge,branch=dev
-            type=edge,branch=dev,suffix=-bullseye
+            type=edge,branch=dev/v0
 
       - name: Setup Docker Buildx
         id: buildx
