@@ -22,7 +22,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/no767/kumiko
+            ghcr.io/no767/chitose
           tags: |
             type=semver,pattern={{version}},suffix=-bullseye
             type=semver,pattern={{major}}.{{minor}},suffix=-bullseye
@@ -80,7 +80,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            no767/kumiko
+            no767/chitose
           tags: |
             type=semver,pattern={{version}},suffix=-bullseye
             type=semver,pattern={{major}}.{{minor}},suffix=-bullseye
