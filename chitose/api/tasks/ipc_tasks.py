@@ -6,4 +6,6 @@ ipc = Client(secret_key="test")
 
 
 async def createTag(path: str, data: CreateTag) -> None:
-    await ipc.request(path, name=data.name, content=data.content)
+    await ipc.request(
+        path, guild_id=data.guild_id, name=data.name, content=data.content
+    )
