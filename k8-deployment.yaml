@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chitose-deployment
+  labels:
+    app: chitose
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: chitose
+  template:
+    metadata:
+      labels:
+        app: chitose
+    spec:
+      containers:
+        - name: chitose
+          image: ghcr.io/no767/chitose:edge
+          ports:
+            - containerPort: 8000

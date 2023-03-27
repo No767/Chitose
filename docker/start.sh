@@ -8,5 +8,5 @@
 #  prisma db push --schema chitose/schema.prisma
 #fi
 
-prisma db push --schema chitose/schema.prisma
-exec uvicorn chitose.main:app --port 8000 --host 0.0.0.0
+prisma db push --schema /Chitose/schema.prisma
+exec uvicorn main:app --port 8000 --host 0.0.0.0
