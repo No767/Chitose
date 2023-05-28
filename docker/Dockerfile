@@ -43,7 +43,6 @@ COPY /chitose/api /Chitose/api
 COPY /chitose/config /Chitose/config
 COPY /chitose/__init__.py /Chitose/__init__.py
 COPY /chitose/main.py /Chitose/main.py
-COPY /chitose/schema.prisma /Chitose/schema.prisma
 COPY /docker/start.sh /Chitose/start.sh
 
 COPY --from=builder /Chitose/wheels /Chitose/wheels
