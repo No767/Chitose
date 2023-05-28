@@ -44,6 +44,7 @@ COPY /chitose/config /Chitose/config
 COPY /chitose/__init__.py /Chitose/__init__.py
 COPY /chitose/main.py /Chitose/main.py
 COPY /docker/start.sh /Chitose/start.sh
+COPY /docker/wait-for-it.sh /Chitose/wait-for-it.sh
 
 COPY --from=builder /Chitose/wheels /Chitose/wheels
 COPY --from=builder /Chitose/requirements.txt /Chitose/requirements.txt
